@@ -39,6 +39,7 @@ setup(
             'default-c = sio.compilers.gcc:run_default_c',
             'default-cc = sio.compilers.gcc:run_default_cpp',
             'default-cpp = sio.compilers.gcc:run_default_cpp',
+            'default-py = sio.compilers.pycompiler:run_default',
             'default-pas = sio.compilers.fpc:run_default',
 
             # Sandboxed compilers:
@@ -57,6 +58,8 @@ setup(
 
             'system-cpp = sio.compilers.system_gcc:run_gplusplus',
             'system-g++ = sio.compilers.system_gcc:run_gplusplus',
+
+            'system-py = sio.compilers.pycompiler:run_default',
 
             'system-pas = sio.compilers.system_fpc:run',
             'system-fpc = sio.compilers.system_fpc:run',
